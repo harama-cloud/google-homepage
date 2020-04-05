@@ -1,0 +1,38 @@
+:root {
+    --navbar-colour: white;
+    --body-colour: white;
+    --footer_colour: #F2F2F2;
+}
+
+#navbar {
+    display: flex;
+    background-color: var(--navbar-colour, white);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#top_left_buttons {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+}
+
+#top_right_buttons {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.9rem; 
+}
+
+#about, #store {
+    padding: 10px;
+}
+
+#gmail, #images, #apps_icon, #profile_icon {
+    padding: 10px;
+}
