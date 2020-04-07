@@ -62,19 +62,41 @@
     margin: 7px;
 }
 
-div.button:hover {
+.button:hover {
     text-decoration: underline;
+    font-weight: bold;
+}
+
+.apps-container {
+    display: flex;
+
+    height: 25px;
+    width: 25px; 
+    border-radius: 100%;
+    
+}
+
+.apps-container:hover {
+    background-color: lightgrey;
+    box-shadow: 0 2px 0 rgba(0,0,0,.15);
+}
+
+#apps {
+    align-self: center;
+    justify-self: center;
 }
 
 #profile {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 100%;
     background-color: #679F39;
-    text-justify: center;
+    /* text-justify: center; */
 }
 
-
+#profile:hover {
+    box-shadow: 0 2px 0 rgba(0,0,0,.15);
+}
 
 
 .main {
