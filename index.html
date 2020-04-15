@@ -2,35 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Homepage</title>
 
     <style>
-      @import url("./index.css");
+      @import url("./Assets/main.css");
     </style>
   </head>
-  <div class="container">
-    <div class="left-nav">
-      <div class="left-nav-button button">About</div>
-      <div class="left-nav-button button">Store</div>
-    </div>
 
-    <div class="right-nav">
-      <div class="right-nav-button button">Gmail</div>
-      <div class="right-nav-button button">Images</div>
-      <div class="apps-container">
+  <body class="container">
+    <div class="leftNav">
+      <div class="leftNavButton">About</div>
+      <div class="leftNavButton">Store</div>
+    </div>
+    <div class="rightNav">
+      <div class="rightNavButton">Gmail</div>
+      <div class="rightNavButton">Images</div>
+      <div class="appsContainer">
         <img
-          src="https://www.pinclipart.com/picdir/big/116-1163675_png-file-four-squares-icon-clipart.png"
-          class="button right-nav-button"
-          id="apps"
+          src="Assets/apps-icon.png"
+          class="button rightNavButton"
+          id="appsIcon"
           width="12.5"
           height="12.5"
         />
       </div>
-      <div class="right-nav-button button" id="profile"></div>
+      <div class="rightNavButton" id="profileIcon"></div>
     </div>
 
-    <div class="main"></div>
+    <div class="main">
+      <img src="Assets/google_image.png" class="googleImage" />
+
+      <div class="searchBarContainer">
+        <img src="Assets/search-icon.png" class="searchIcon" />
+
+        <form class="searchForm">
+          <input type="text" id="searchBar" />
+        </form>
+
+        <img src="Assets/mic-icon.png" class="micIcon" />
+      </div>
+
+      <div>
+        <div class="searchbarButtons"></div>
+        <div class="searchbarButtons"></div>
+      </div>
+    </div>
 
     <div class="footer"></div>
-  </div>
+  </body>
 </html>

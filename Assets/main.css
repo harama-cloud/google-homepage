@@ -9,8 +9,8 @@
   padding: 0;
 
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 6% 79% 15%;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 6% 84% 10%;
   grid-template-areas:
     "l-nav . r-nav"
     ". main ."
@@ -20,8 +20,7 @@
   font-family: var(--global-font), arial;
   text-align: center;
 }
-
-.left-nav {
+.leftNav {
   grid-area: l-nav;
 
   background-color: white;
@@ -32,8 +31,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-
-.right-nav {
+.rightNav {
   grid-area: r-nav;
 
   background-color: white;
@@ -44,59 +42,108 @@
   justify-content: flex-end;
   align-items: center;
 }
-
-.left-nav-button {
+.leftNavButton {
   font-size: 0.8em;
   color: #404040;
   font-weight: lighter;
   margin: 7px;
 }
-
-.right-nav-button {
+.rightNavButton {
   font-size: 0.8em;
   color: #404040;
   font-weight: lighter;
   margin: 7px;
 }
-
 .button:hover {
   text-decoration: underline;
   font-weight: bold;
 }
-
-.apps-container {
+.appsContainer {
   display: flex;
 
   height: 25px;
   width: 25px;
   border-radius: 100%;
 }
-
-.apps-container:hover {
+.appsContainer:hover {
   background-color: lightgrey;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
 }
-
-#apps {
+#appsIcon {
   align-self: center;
   justify-self: center;
 }
-
-#profile {
+#profileIcon {
   height: 25px;
   width: 25px;
   border-radius: 100%;
   background-color: #679f39;
   /* text-justify: center; */
 }
-
-#profile:hover {
+#profileIcon:hover {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 .main {
-  background-color: lightcoral;
+  background-color: transparent;
   grid-area: main;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBarContainer {
+  background-color: white;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+
+  width: 85%;
+  height: 35px;
+  padding: 4px;
+
+  display: flex;
+  align-content: center;
+}
+
+.googleImage {
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+.searchForm {
+  width: 80%;
+
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+#searchBar {
+  border: none;
+  width: 60%;
+
+  width: 100%;
+  height: 90%;
+}
+
+#searchBar:focus {
+  outline: transparent auto 0px;
+}
+
+.searchIcon {
+  max-height: 20px;
+  width: 40px;
+
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.micIcon {
+  max-height: 25px;
+  width: 20px;
+
+  padding-top: 5px;
+  padding-right: 1%;
 }
 
 .footer {
